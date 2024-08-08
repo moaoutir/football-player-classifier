@@ -1,0 +1,10 @@
+# Environnement virtuel
+env/
+
+# Fichiers de configuration IDE
+.vscode/
+.idea/
+
+# Fichiers de compilation Python
+__pycache__/
+*.pyc

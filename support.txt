@@ -1,0 +1,4 @@
+1.flask-sqlalchemy:
+Flask-SQLAlchemy est une extension pour Flask qui facilite l'intégration de SQLAlchemy, un ORM (Object-Relational Mapping) pour Python. 
+SQLAlchemy permet de gérer les bases de données relationnelles en utilisant des objets Python plutôt que des requêtes SQL brutes.
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Player Image Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Football Player Image Classification</h1>
+        <div class="players">
+            <div class="player" id="ronaldo">
+                <div class="image">
+                    <img src="../static/images/ronaldo.webp" alt="Cristiano Ronaldo">
+                </div>
+                <p>Cristiano Ronaldo</p>
+            </div>
+            <div class="player" id="mbappe">
+                <div class="image">
+                    <img src="../static/images/mbappe.png" alt="Kylian Mbappe">
+                </div>    
+                <p>Kylian Mbappe</p>
+            </div>
+            <div class="player" id="haaland">
+                <div class="image">
+                    <img src="../static/images/haaland.png" alt="Erling Haaland">
+                </div>
+                <p>Erling Haaland</p>
+            </div>
+            <div class="player" id="messi">
+                <div class="image">
+                    <img src="../static/images/messi.png" alt="Lionel Messi">
+                </div>
+                <p>Lionel Messi</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="upload-zone" id="upload-zone">
+                    <p>Drag and drop a file here or click to upload</p>
+                    <input type="file" id="fileInput" multiple>
+                </div>
+                <script src="../static/scripts.js"></script>
+                
+            </div>
+            
+            <div class="col-sm-8 error" id="error" >
+                <p>Can't classify image. Classifier was not able to detect face and two eyes properly</p>    
+            </div>
+
+            <div class="col-sm-4" id="resultHolder">
+            </div>
+            <div class="col-sm-4" id="divClassTable">
+                <table id="classTable">
+                        <tr>
+                            <th>Player</th>
+                            <th>Probability Score</th>
+                        </tr>
+                        <tr>
+                            <td>Cristiano Ronaldo</td>
+                            <td id="score_ronaldo"></td>
+                        </tr>
+                        <tr>
+                            <td>Kylian Mbappe</td>
+                            <td id="score_mbappe"></td>
+                        </tr>
+                        <tr>
+                            <td>Erling Haaland</td>
+                            <td id="score_haaland"></td>
+                        </tr>
+                        <tr>
+                            <td>Lionel Messi</td>
+                            <td id="score_messi"></td>
+                        </tr>
+                </table>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
